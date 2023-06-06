@@ -116,6 +116,47 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
+footer {
+    padding: 20px 40px;
+    background-color: #4c4c4c;
+    color: #fff;
+}
+
+.heading h1 {
+    font-weight: 400;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 70px;
+}
+
+.footer-container h3 {
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.sub-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 70px;
+}
+
+.sub-footer h5 {
+    cursor: pointer;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.last h4 {
+    text-align: center;
+    font-weight: 500;
+}
+
 @media (max-width: 1500px) {
     ul {
         display: none;
