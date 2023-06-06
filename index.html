@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <!-- Icons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Style Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href "#" onclick="reload()">
+                <img src="news-logo.jpg" alt="">
+            </a>
+        </nav>
+        <ul>
+            <li class="nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+            <li class="nav-item" id="football" onclick=" onNavItemClick( 'football') ">Football</li>
+            <li class="nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+        </ul>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search News">
+            <i id="search-btn" class='bx bx-search'></i>
+
+        </div>
+    </header>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="http://via.placeholder.com/400x200" alt="news-img" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, perferendis!</p>
+                </div>
+            </div>
+</template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
